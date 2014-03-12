@@ -7,8 +7,9 @@
 # the list of keys: file://localhost/Users/path/to/keys.txt. 
 # This file will update once a day, but can be manually updated too.
 #
-# 2. Set a hotkey for "Suggest Matching Abbreviations" and call it to insert a
-# pandoc-markdown-style citation key using TextExpander's fuzzy searching.
+# 2. Set a hotkey for "Suggest Matching Abbreviations" and/or "Search Snippets"
+# and use it to insert a pandoc-markdown-style citation key using TextExpander's 
+# fuzzy searching.
 #
 # Inspired and adapted from David Sanson's Ruby script 
 # (https://gist.github.com/dsanson/580866) and original post at
