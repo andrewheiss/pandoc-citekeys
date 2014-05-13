@@ -65,7 +65,7 @@ citekeys = re.findall("@(.*?)[\\.,;\\] ]", md)
 reg = "\\(" + "\\)\\|\\(".join(citekeys) + "\\)"
 
 # Run bibtool with all required arguments
-call([bibtool_path, "-q", 
+call([bibtool_path, "-q", "-s",
       "-r", bibtool_settings, 
       "-X", reg, 
       "-i", bib_file,
