@@ -1,7 +1,8 @@
 # pandoc-citekeys
 
 * `bib_keys.py`: Finds all the cite keys from a BibTeX file and puts them in a text file that can be read by TextExpander.
-* `bib_extract.py`: Finds all the cite keys used in a Markdown file and extracts them from a large, master BibTeX file into a new .bib file containing only those bibliographic entries (good for distributing clean paper-specific bibliographies)
+* `bib_extract.py`: Finds all the cite keys used in a Markdown file and extracts them from a large, master BibTeX file into a new .bib file containing only those bibliographic entries (good for distributing clean paper-specific bibliographies).
+* `increase_frequency.scpt`: Access hidden API settings in TextExpander to set a custom group refresh frequency.
 
 Usage instructions are included in each script.
 

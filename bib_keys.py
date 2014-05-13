@@ -5,9 +5,10 @@
 #
 # 1. In TextExpander, select "Add Group from URL" and type the local URL for 
 # the list of keys: file://localhost/Users/path/to/keys.txt. 
-# This file will update once a day, but can be manually updated too.
 #
-# 2. Set a hotkey for "Suggest Matching Abbreviations" and/or "Search Snippets"
+# 2. Open `increase_frequency.scpt` and set a custom refresh time for the new group.
+#
+# 3. Set a hotkey for "Suggest Matching Abbreviations" and/or "Search Snippets"
 # and use it to insert a pandoc-markdown-style citation key using TextExpander's 
 # fuzzy searching.
 #
