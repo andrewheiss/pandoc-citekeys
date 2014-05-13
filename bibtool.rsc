@@ -12,6 +12,7 @@ select.crossrefs = On
 % New entries to work with biblatex
 % (bibtool complains about nonstandard entries)
 new.entry.type = {online}
+new.entry.type = {presentation}
 
 % Clean up fields for distribution
 delete.field{rating}
