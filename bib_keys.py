@@ -46,4 +46,4 @@ bibkeys = sorted(re.findall("@.*?{(.*?),", bibfile))
 # Write citekeys to file in TextExpander format (",@citekey")
 with output as f:
   for entry in bibkeys:
-    f.write(",@{0}".format(entry) + '\n')
+    f.write(",{0}".format(entry) + '\n')
