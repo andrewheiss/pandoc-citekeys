@@ -12,7 +12,7 @@
 # and use it to insert a pandoc-markdown-style citation key using TextExpander's 
 # fuzzy searching.
 #
-# Inspired and adapted from David Sanson's Ruby script 
+# Inspired and adapted from David Sanson's Ruby script
 # (https://gist.github.com/dsanson/580866) and original post at
 # https://groups.google.com/d/msg/pandoc-discuss/ddQb5xVjNRE/J3Nnv38rHysJ
 #
@@ -26,10 +26,10 @@ import sys
 
 # Get command line information
 parser = argparse.ArgumentParser(description='Convert a BibTeX file to a list of keys for TextExpander.')
-parser.add_argument('filename', type=argparse.FileType('r'), 
+parser.add_argument('filename', type=argparse.FileType('r', encoding='UTF-8'),
                     help='the path to a BibTeX file')
-parser.add_argument('output', type=argparse.FileType('w'), 
-                    nargs='?', default=sys.stdout, 
+parser.add_argument('output', type=argparse.FileType('w', encoding='UTF-8'),
+                    nargs='?', default=sys.stdout,
                     help='the name of the output file (defaults to stdout)')
 args = parser.parse_args()
 
@@ -45,5 +45,5 @@ bibkeys = sorted(re.findall("@.*?{(.*?),", bibfile))
 
 # Write citekeys to file in TextExpander format (",@citekey")
 with output as f:
-  for entry in bibkeys:
-    f.write(",{0}".format(entry) + '\n')
+    for entry in bibkeys:
+        f.write(",{0}".format(entry) + '\n')
